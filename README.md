@@ -5,6 +5,7 @@ A comprehensive Streamlit application demonstrating **parallel computing** for p
 ## 🚀 Key Features
 
 ### Core Functionality
+
 - **US Market Portfolio Optimization**: Optimize portfolios using US stocks (NASDAQ, NYSE, etc.)
 - **Indian NSE Market Portfolio Optimization**: Optimize portfolios using NSE India stocks
 - **Parallel Processing**: Leverage multiprocessing to speed up portfolio simulations across multiple CPU cores
@@ -16,6 +17,7 @@ A comprehensive Streamlit application demonstrating **parallel computing** for p
 ## 📊 Tab 1: Portfolio Optimization (US Markets)
 
 ### Main Features
+
 - **Portfolio Optimization**: Optimize portfolios using three strategies:
   - **Max Sharpe**: Maximum risk-adjusted return
   - **Max Return**: Maximum expected return
@@ -32,29 +34,34 @@ A comprehensive Streamlit application demonstrating **parallel computing** for p
 ### 🎮 Interactive Features (5 Sub-tabs)
 
 #### 1. 🔄 Portfolio Rebalancing
+
 - **Interactive Sliders**: Manually adjust portfolio weights for each stock
 - **Real-time Metrics**: See immediate impact on return, volatility, and Sharpe ratio
 - **Visual Comparison**: Compare your adjusted portfolio with the optimized one on the efficient frontier
 - **Reset Button**: Quickly return to optimized weights
 
 #### 2. 📊 Correlation Analysis
+
 - **Correlation Heatmap**: Interactive heatmap showing how stocks move together
 - **Correlation Insights**: Identifies highest and lowest correlation pairs
 - **Diversification Guidance**: Understand portfolio diversification benefits
 
 #### 3. 🎲 Monte Carlo Simulation
+
 - **Future Projections**: Simulate thousands of possible future scenarios (500-5000 simulations)
 - **Percentile Bands**: Visualize 5th-95th, 25th-75th percentiles and median projections
 - **Probability Analysis**: Calculate probability of gains over different time horizons
 - **Customizable Periods**: Project 30-504 days into the future
 
 #### 4. ⚠️ Risk Analysis
+
 - **Value at Risk (VaR)**: Calculate VaR at 5% and 1% confidence levels
 - **Conditional VaR (CVaR)**: Expected shortfall analysis
 - **Return Distribution**: Histogram showing portfolio return distribution with VaR thresholds
 - **Risk Summary Table**: Comprehensive risk metrics dashboard
 
 #### 5. 📥 Export Results
+
 - **Download Weights**: Export portfolio weights as CSV
 - **Download Metrics**: Export performance metrics as CSV
 - **Download All Portfolios**: Export all simulated portfolios for further analysis
@@ -65,6 +72,7 @@ A comprehensive Streamlit application demonstrating **parallel computing** for p
 ## 🇮🇳 Tab 2: Portfolio Optimization (NSE India)
 
 ### Main Features
+
 - **NSE Stock Support**: Optimize portfolios using Indian National Stock Exchange stocks
 - **Automatic .NS Suffix**: Enter tickers without suffix (e.g., RELIANCE, TCS, INFY)
 - **Same Optimization Strategies**: Max Sharpe, Max Return, Min Risk
@@ -72,7 +80,9 @@ A comprehensive Streamlit application demonstrating **parallel computing** for p
 - **Initial Investment**: ₹1,00,000 default for backtesting
 
 ### 🎮 Interactive Features (5 Sub-tabs)
+
 Same interactive features as Tab 1, adapted for NSE stocks:
+
 - Portfolio Rebalancing with sliders
 - Correlation Analysis for Indian stocks
 - Monte Carlo Simulation with ₹1,00,000 initial value
@@ -84,6 +94,7 @@ Same interactive features as Tab 1, adapted for NSE stocks:
 ## ⚙️ Tab 3: Parallel Speedup Benchmark
 
 ### Features
+
 - **Performance Measurement**: Compare runtime with 1, 2, 4, and 8 workers
 - **Speedup Visualization**: Interactive charts showing:
   - Speedup vs. Number of Workers (with ideal linear speedup reference)
@@ -102,8 +113,9 @@ Same interactive features as Tab 1, adapted for NSE stocks:
 ## 🔀 Tab 4: Portfolio Comparison Tool
 
 ### Features
+
 - **Multi-Strategy Comparison**: Compare Max Sharpe, Max Return, and Min Risk strategies simultaneously
-- **Interactive Portfolio Selection**: 
+- **Interactive Portfolio Selection**:
   - Dropdown to select from top 100 portfolios (sorted by Sharpe ratio)
   - Visual highlighting of selected portfolio on efficient frontier
   - Detailed metrics comparison table
@@ -122,30 +134,37 @@ Same interactive features as Tab 1, adapted for NSE stocks:
 ### 🇺🇸 US Stock Tickers (Groups of 5 by Sector)
 
 #### Technology
+
 - **AAPL, MSFT, GOOG, AMZN, META** (Apple, Microsoft, Google, Amazon, Meta)
 - **NVDA, AMD, INTC, QCOM, AVGO** (NVIDIA, AMD, Intel, Qualcomm, Broadcom)
 
 #### Finance & Banking
+
 - **JPM, BAC, WFC, GS, MS** (JPMorgan, Bank of America, Wells Fargo, Goldman Sachs, Morgan Stanley)
 - **V, MA, AXP, COF, DFS** (Visa, Mastercard, American Express, Capital One, Discover)
 
 #### Healthcare & Pharmaceuticals
+
 - **JNJ, PFE, UNH, ABT, TMO** (Johnson & Johnson, Pfizer, UnitedHealth, Abbott, Thermo Fisher)
 - **LLY, MRK, ABBV, BMY, GILD** (Eli Lilly, Merck, AbbVie, Bristol-Myers, Gilead)
 
 #### Consumer & Retail
+
 - **WMT, HD, MCD, NKE, SBUX** (Walmart, Home Depot, McDonald's, Nike, Starbucks)
 - **TGT, COST, LOW, TJX, DG** (Target, Costco, Lowe's, TJX, Dollar General)
 
 #### Energy & Utilities
+
 - **XOM, CVX, SLB, EOG, COP** (ExxonMobil, Chevron, Schlumberger, EOG Resources, ConocoPhillips)
 - **NEE, DUK, SO, AEP, SRE** (NextEra Energy, Duke Energy, Southern Company, AEP, Sempra)
 
 #### Industrial & Manufacturing
+
 - **BA, CAT, GE, HON, RTX** (Boeing, Caterpillar, General Electric, Honeywell, Raytheon)
 - **UNP, CSX, NSC, UPS, FDX** (Union Pacific, CSX, Norfolk Southern, UPS, FedEx)
 
 #### Communication & Media
+
 - **DIS, NFLX, CMCSA, T, VZ** (Disney, Netflix, Comcast, AT&T, Verizon)
 - **GOOGL, META, SNAP, TWTR, ROKU** (Google, Meta, Snap, Twitter, Roku)
 
@@ -154,33 +173,41 @@ Same interactive features as Tab 1, adapted for NSE stocks:
 ### 🇮🇳 NSE Stock Tickers (Groups of 5 by Sector)
 
 #### Banking & Finance
+
 - **HDFCBANK, ICICIBANK, SBIN, KOTAKBANK, AXISBANK** (HDFC Bank, ICICI Bank, SBI, Kotak Bank, Axis Bank)
 - **INDUSINDBK, FEDERALBNK, BANDHANBNK, IDFCFIRSTB, YESBANK** (IndusInd Bank, Federal Bank, Bandhan Bank, IDFC First Bank, Yes Bank)
 
 #### Information Technology
+
 - **TCS, INFY, WIPRO, HCLTECH, TECHM** (TCS, Infosys, Wipro, HCL Tech, Tech Mahindra)
 - **LTIM, MINDTREE, MPHASIS, ZENSAR, PERSISTENT** (LTI Mindtree, Mindtree, Mphasis, Zensar, Persistent)
 
 #### Consumer & Retail
+
 - **RELIANCE, ITC, HINDUNILVR, ASIANPAINT, MARUTI** (Reliance, ITC, HUL, Asian Paints, Maruti)
 - **TITAN, TATACONSUM, GODREJCP, DABUR, BRITANNIA** (Titan, Tata Consumer, Godrej CP, Dabur, Britannia)
 
 #### Pharmaceuticals & Healthcare
+
 - **SUNPHARMA, DRREDDY, CIPLA, LUPIN, AUROPHARMA** (Sun Pharma, Dr. Reddy's, Cipla, Lupin, Aurobindo)
 - **DIVISLAB, BIOCON, TORONTPHARM, GLENMARK, CADILAHC** (Divis Labs, Biocon, Torrent Pharma, Glenmark, Cadila)
 
 #### Energy & Power
+
 - **ONGC, NTPC, POWERGRID, GAIL, IOC** (ONGC, NTPC, Power Grid, GAIL, Indian Oil)
 - **BPCL, HPCL, ADANIPOWER, TATAPOWER, RELIANCE** (BPCL, HPCL, Adani Power, Tata Power, Reliance)
 
 #### Infrastructure & Engineering
+
 - **LT, ADANIPORTS, JSWSTEEL, TATASTEEL, SAIL** (L&T, Adani Ports, JSW Steel, Tata Steel, SAIL)
 - **ULTRACEMCO, AMBUJACEM, SHREECEM, ACC, RAMCOCEM** (UltraTech, Ambuja, Shree Cement, ACC, Ramco)
 
 #### Telecom & Communication
+
 - **BHARTIARTL, RELIANCE, IDEA, TATACOMM, MTNL** (Bharti Airtel, Reliance Jio, Vodafone Idea, Tata Comm, MTNL)
 
 #### Automobiles
+
 - **MARUTI, TATAMOTORS, M&M, BAJAJ-AUTO, EICHERMOT** (Maruti, Tata Motors, Mahindra, Bajaj Auto, Eicher)
 - **HEROMOTOCO, TVSMOTOR, ASHOKLEY, FORCEMOT, ESCORTS** (Hero MotoCorp, TVS Motor, Ashok Leyland, Force Motors, Escorts)
 
@@ -216,11 +243,13 @@ streamlit run app.py
 ### Note on Virtual Environment
 
 Using a virtual environment is recommended to:
+
 - Isolate project dependencies
 - Avoid conflicts with other Python projects
 - Ensure consistent package versions
 
 **To deactivate the virtual environment** when done:
+
 ```bash
 deactivate
 ```
@@ -288,17 +317,20 @@ The application uses Python's `multiprocessing.Pool` to distribute portfolio sim
 
 This project is ideal for demonstrating:
 
-1. **Parallel Computing Concepts**: 
+1. **Parallel Computing Concepts**:
+
    - Process pools and workload distribution
    - Speedup analysis and efficiency metrics
    - Amdahl's Law in practice
 
 2. **Financial Modeling**:
+
    - Portfolio optimization theory
    - Risk-return analysis
    - Monte Carlo simulation methods
 
 3. **Real-World Applications**:
+
    - Financial technology (FinTech)
    - Data-driven decision making
    - Interactive data visualization
@@ -320,17 +352,20 @@ This project is ideal for demonstrating:
 ## 🎯 Key Metrics Explained
 
 ### Return Metrics
+
 - **Total Return**: Cumulative return over the entire period
 - **Annual Return**: Average annualized return
 - **CAGR**: Compound Annual Growth Rate
 
 ### Risk Metrics
+
 - **Volatility**: Standard deviation of returns (annualized)
 - **Maximum Drawdown**: Largest peak-to-trough decline percentage
 - **VaR (5%)**: Loss threshold expected 5% of the time
 - **CVaR**: Average loss when VaR is exceeded
 
 ### Risk-Adjusted Metrics
+
 - **Sharpe Ratio**: (Return - Risk-free rate) / Volatility
 - **Sortino Ratio**: (Return - Risk-free rate) / Downside volatility
 - **Win Rate**: Percentage of positive return days
@@ -358,17 +393,20 @@ This project is created for educational purposes as part of a Parallel Computing
 
 ### Common Issues
 
-1. **Data Fetching Errors**: 
+1. **Data Fetching Errors**:
+
    - Check internet connection
    - Verify ticker symbols are correct
    - Try a different date range
 
 2. **NSE Tickers Not Working**:
+
    - Ensure you're entering without .NS suffix
    - Check if ticker is listed on NSE
    - Some tickers may have limited historical data
 
 3. **Slow Performance**:
+
    - Reduce number of portfolios
    - Use fewer workers if system is overloaded
    - Check date range (longer ranges = more data)
