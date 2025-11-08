@@ -188,16 +188,41 @@ Same interactive features as Tab 1, adapted for NSE stocks:
 
 ## 📦 Installation
 
-1. Install the required dependencies:
+1. **Create a Python virtual environment** (recommended):
+
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# On Linux/Mac:
+source venv/bin/activate
+# On Windows:
+# venv\Scripts\activate
+```
+
+2. **Install the required dependencies**:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Run the Streamlit app:
+3. **Run the Streamlit app**:
 
 ```bash
 streamlit run app.py
+```
+
+### Note on Virtual Environment
+
+Using a virtual environment is recommended to:
+- Isolate project dependencies
+- Avoid conflicts with other Python projects
+- Ensure consistent package versions
+
+**To deactivate the virtual environment** when done:
+```bash
+deactivate
 ```
 
 ## 📊 Usage Guide
