@@ -137,11 +137,14 @@ OptiQuant-GPU/
 git clone https://github.com/Pranav-Vinodh/Parallel-Portfolio-Optimization-Dashboard.git
 cd Parallel-Portfolio-Optimization-Dashboard
 
-# Create and activate virtual environment
+# With Conda (Recommended)
+conda create -n optiquant python=3.11 -y
+conda activate optiquant
+pip install -e .
+
+# Or with venv
 python3 -m venv .venv
 source .venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
 ```
 
