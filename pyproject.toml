@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optiquant"
+version = "2.0.0"
+description = "High-Throughput Regime-Adaptive Quantitative Portfolio Engine"
+authors = [
+    { name = "Pranav Vinodh", email = "prnv2005@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = [
+    "quantitative-finance",
+    "portfolio-optimization",
+    "markowitz",
+    "hierarchical-risk-parity",
+    "hidden-markov-models",
+    "gpu-acceleration",
+    "cuda",
+    "pytorch"
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.2.0",
+    "hmmlearn>=0.3.0",
+    "torch>=2.0.0",
+    "yfinance>=0.2.30",
+    "streamlit>=1.30.0",
+    "plotly>=5.18.0"
+]
+
+[project.scripts]
+optiquant = "optiquant.ui.dashboard:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["optiquant*"]

@@ -55,3 +55,9 @@ Thumbs.db
 *.pyc
 __pycache__/
 
+
+# Testing & Profiling
+.pytest_cache/
+.coverage
+htmlcov/
+*.prof
