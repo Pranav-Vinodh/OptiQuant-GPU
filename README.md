@@ -90,7 +90,7 @@ Measured on 1,000,000 simulated portfolios across 15 assets:
 ## Project Structure
 
 ```
-Parallel-Portfolio-Optimization-Dashboard/
+OptiQuant-GPU/
 ├── app.py                        # Streamlit entrypoint
 ├── pyproject.toml                # Package configuration
 ├── requirements.txt              # Dependencies
@@ -128,8 +128,8 @@ Parallel-Portfolio-Optimization-Dashboard/
 ### 1. Setup with Conda (Recommended)
 
 ```bash
-git clone https://github.com/Pranav-Vinodh/Parallel-Portfolio-Optimization-Dashboard.git
-cd Parallel-Portfolio-Optimization-Dashboard
+git clone https://github.com/Pranav-Vinodh/OptiQuant-GPU.git
+cd OptiQuant-GPU
 
 conda create -n optiquant python=3.11 -y
 conda activate optiquant
